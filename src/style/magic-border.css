@@ -1,0 +1,143 @@
+.animated-border {
+  position: relative;
+  border-radius: 10px;
+}
+
+.animated-border .inner {
+  border-radius: 10px;
+  overflow: hidden;
+  height: 100%;
+  background: #1f1e1e;
+}
+
+.noStudents::before,
+.noStudents::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(
+    45deg,
+    #4a4c52,
+    #a5a5a5,
+    #4a4c52,
+    #4a4c52,
+    #a5a5a5,
+    #4a4c52
+  );
+  background-size: 400%;
+  z-index: -1;
+  animation: glow 10s linear infinite;
+  border-radius: 10px;
+}
+
+.ravenclaw::before,
+.ravenclaw::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(
+    45deg,
+    #0E1A40,
+    #cd7f32,
+    #0E1A40,
+    #0E1A40,
+    #cd7f32,
+    #0E1A40
+  );
+  background-size: 400%;
+  z-index: -1;
+  animation: glow 10s linear infinite;
+  border-radius: 10px;
+}
+
+.slytherin::before,
+.slytherin::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(
+    45deg,
+    #217940,
+    #aaaaaa,
+    #217940,
+    #aaaaaa,
+    #217940,
+    #217940
+  );
+  background-size: 400%;
+  z-index: -1;
+  animation: glow 10s linear infinite;
+  border-radius: 10px;
+}
+
+.hufflepuff::before,
+.hufflepuff::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(
+    45deg,
+    #fff1ac,
+    #ffd502,
+    #fff1ac,
+    #ffd502,
+    #fff1ac,
+    #ffd502
+  );
+  background-size: 400%;
+  z-index: -1;
+  animation: glow 10s linear infinite;
+  border-radius: 10px;
+}
+
+.griffindor::before,
+.griffindor::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(
+    45deg,
+    #740001,
+    #b6890e,
+    #740001,
+    #b6890e,
+    #740001,
+    #b6890e
+  );
+  background-size: 400%;
+  z-index: -1;
+  animation: glow 10s linear infinite;
+  border-radius: 10px;
+}
+
+.animated-border::after {
+  filter: blur(13px);
+  transform: translate3d(0, 0, 0); /* Para Safari */
+}
+
+@keyframes glow {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
