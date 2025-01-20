@@ -1,15 +1,7 @@
 import { motion } from "framer-motion";
 import { MdFavorite, MdFavoriteBorder, MdOutlineImageNotSupported } from "react-icons/md";
-import { Character } from "../../../@types/Characters";
 import { getFavoriteHousesStyles, getHousesStyles } from "../../../utils/housesColors";
-
-interface CharacterCardProps {
-  character: Character;
-  isFavorite: boolean;
-  isHighlighted: boolean;
-  toggleFavorite: (id: string) => void;
-  onClick: () => void;
-}
+import { CharacterCardProps } from "./@types";
 
 export const CharacterCard = ({ character, isFavorite, isHighlighted, toggleFavorite, onClick }: CharacterCardProps) => {
   return (
